@@ -86,3 +86,5 @@ HTML5 Angular JavaScript Application
      o  Please visit the Philips HealthSuite Developer portal for any additional
 	information around bug fixes, updates and further resources.  The location
 	is https://portal.api.pcftest.com/.
+
+Testing changes.
