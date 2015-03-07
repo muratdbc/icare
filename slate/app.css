@@ -1,0 +1,79 @@
+* {margin: 0; padding: 0;}
+
+body {
+   background: #222;
+}
+
+/*GALLERY*/
+.gallery {
+   width: 1000px;
+   margin: 50px auto;
+}
+
+ul {
+   list-style: none;
+}
+
+.gallery li {
+   height: 150px;
+   width: 150px;
+   margin: 25px;
+   float: left;
+   overflow: hidden;
+
+   -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+       border-radius: 50%;
+}
+.header .gallery li {
+   height: 50px;
+   width: 50px;
+   margin: 1px;
+   float: left;
+   overflow: hidden;
+
+   -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+       border-radius: 50%;
+}
+
+
+.gallery li img {
+   margin-top: -70px;
+
+   -webkit-transition: margin 1.5s ease;
+      -moz-transition: margin 1.5s ease;
+       -ms-transition: margin 1.5s ease;
+        -o-transition: margin 1.5s ease;
+           transition: margin 1.5s ease;
+}
+
+.gallery li p {
+   width: 100px;
+   padding: 20px;
+   position: relative;
+   left: 15%;
+   top: 75%; /*set to 110% after this step!*/
+
+   color: white;
+   text-align: center;
+   text-transform: uppercase;
+   font: bold 18px/1 Helvetica, Verdana, sans-serif;
+   text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+   -webkit-transition: top 0.5s ease;
+      -moz-transition: top 0.5s ease;
+       -ms-transition: top 0.5s ease;
+        -o-transition: top 0.5s ease;
+           transition: top 0.5s ease;
+}
+
+.circular {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(images/me.jpg) no-repeat;
+  float:right;
+  }

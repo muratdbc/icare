@@ -1,0 +1,1 @@
+var icare = angular.module('icare', ['angular-timeline']);
