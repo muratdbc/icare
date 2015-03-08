@@ -42,14 +42,10 @@ $( document ).ready(function() {
 // ------------ BUBBLE BOOKMARK / DOCTOR EVENT ------------
 
   $('#messagesDiv').on('click', function(e){
-    console.log(e.target);
-    var messageChildren = e.target.childNodes
-    var childrenLength = messageChildren.length
-    buttons = Array.prototype.slice.call(messageChildren, 1, childrenLength);
-    buttons.forEach( function(button) {
-      $(button).show();
-    });
+
+    $('#myModal').modal('show');
   });
+
 
   //
 
