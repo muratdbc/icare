@@ -38,12 +38,16 @@ $( document ).ready(function() {
     // .appendTo($('#messagesDiv'));
   }
 
+
 // ------------ END FIREBASE CHAT ------------
 // ------------ BUBBLE BOOKMARK / DOCTOR EVENT ------------
 
   $('#messagesDiv').on('click', function(e){
-      debugger
-    $('#myModal').modal('show');
+      var message = e.target
+      
+      $('.fade_bookmark_message').append(message).css
+      $('.fade_bookmark').show()
+    // $('#myModal').modal('show');
   });
 
 

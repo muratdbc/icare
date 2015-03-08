@@ -50,7 +50,7 @@ body {
   position:relative;
   padding:10px 20px;
   color:white;
-  background:#0B93F6;
+  background: #4BAE4F;
   border-radius:25px;
   float: right;
 }
@@ -61,7 +61,7 @@ body {
   bottom:-2px;
   right:-7px;
   height:20px;
-  border-right:20px solid #0B93F6;
+  border-right:20px solid #4BAE4F;
   border-bottom-left-radius: 16px 14px;
   -webkit-transform:translate(0, -2px);
 }
@@ -82,7 +82,7 @@ body {
 #messageInput {
   position:relative;
   padding:10px 20px;
-  border-color: #0B93F6;
+  border-color: #4BAE4F;
   border-radius:25px;
   color: black;
   text-align: center;
@@ -122,3 +122,22 @@ body {
   background: url(images/me.jpg) no-repeat;
   float:right;
   }
+
+/*
+hidden modal for bookmarking*/
+
+.fade_bookmark{
+  position: absolute;
+  color: white;
+  background-color: rgba(0,0,0,.85);
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+
+.fade_content_container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 300px;
+}
