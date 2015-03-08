@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+// ------------ FIREBASE CHAT ------------
   var myDataRef = new Firebase('https://burning-inferno-7459.firebaseio.com');
   $('#messageInput').keypress(function (e) {
     if (e.keyCode == 13) {
@@ -17,15 +18,37 @@ $( document ).ready(function() {
 
   var messageNum = 1;
   function displayChatMessage(name, text) {
-    console.log(messageNum);
     if (name == "Nancy" || name == "Mom" ) {
-      $('<div/>').text(text).addClass("from-mom").attr('data-message-num', messageNum).appendTo($('#messagesDiv'));
+      addMessage('from-mom', name, text);
     } else {
-      $('<div/>').text(text).addClass("from-not-mom").attr('data-message-num', messageNum).appendTo($('#messagesDiv'));
+      addMessage('from-not-mom', name, text);
     }
     $('<div/>').addClass('clear').appendTo($('#messagesDiv'));
     $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
     messageNum++;
   };
+
+  function addMessage(fromClass, name, text) {
+    var messageDiv = $('<div/>').append(text).addClass(fromClass).attr('data-message-num', messageNum)
+    var timelineButton = $('<button/>').text('Add To Timeline').hide();
+    var doctorButton = $('<button/>').text('Alert Doctor').hide();
+    messageDiv.appendTo($('#messagesDiv'));
+    timelineButton.appendTo(messageDiv);
+    doctorButton.appendTo(messageDiv);
+    // .appendTo($('#messagesDiv'));
+  }
+
+// ------------ END FIREBASE CHAT ------------
+// ------------ BUBBLE BOOKMARK / DOCTOR EVENT ------------
+
+  $('#messagesDiv').on('click', function(e){
+    console.log(e.target);
+    var messageChildren = e.target.childNodes
+    var childrenLength = messageChildren.length
+    buttons = Array.prototype.slice.call(messageChildren, 1, childrenLength);
+    buttons.forEach( function(button) {
+      $(button).show();
+    });
+  });
 
 });
