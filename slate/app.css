@@ -77,3 +77,14 @@ ul {
   background: url(images/me.jpg) no-repeat;
   float:right;
   }
+
+.gallery .override{
+    margin:1px;
+  }
+
+.name{
+  float: left;
+  margin-left:50px;
+  font-size: large;
+
+}
