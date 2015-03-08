@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	 <link rel="stylesheet" href="jquery.mobile-1.3.1.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/doctor-chart.css"> <!-- Resource style -->
+	<script src="js/timeline-modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Doctor Chart</title>
+</head>
+<body>
+<!-- 	<header>
+		<a href="">
+			<h1 class='header' id='left'>Back</h1>
+		</a>
+		<h1 class='header' id='center'>Responsive Vertical Timeline</h1>
+		<h1 class='header' id='right'>PICTURE</h1>
+	</header> -->
+	<div data-role="header" class="header" style="border-radius:0%;width:400px;height:60px" data-position="fixed">
+    <a href="#" data-role="">Virgin</a>
+    <h1>2:44</h1>
+    <h3>Patient Metrics</h3>
+    <a href="#" data-role="" class="circular"></a>
+
+  </div><!-- /header -->
+	<div id='line'></div>
+	<section id="cd-timeline" class="cd-container">
+
+	<!-- BLOCK -->
+    <div class='metrics'>
+      <p class='metric-num'>120</p>
+      <p class='metric-title'>Heart Rate</p>
+    </div>
+
+  <!-- BLOCK -->
+    <div id="chartModal" class="reveal-modal" data-reveal>
+      <h2>Pain Chart For <span></span></h2>
+      <h5>Pain Average: <span id="pain-avg"></span>   (Pain Scale 0-9)</h5>
+      <div class="pain-chart-div">
+        <canvas id="user-chart-modal" width="800" height="600"></canvas>
+        <a class="close-reveal-modal">&#215;</a>
+        <div><p>Date</p></div>
+      </div>
+
+    </div>
+
+	</section> <!-- cd-timeline -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/timeline-main.js"></script> <!-- Resource jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js'></script>
+<script src="js/doctor-chart.js"></script>
+</body>
+</html>

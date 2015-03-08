@@ -561,6 +561,15 @@ header h1 {
     transform: translateX(0);
   }
 }
+/* doctor-chart */
+
+.metric-num {
+
+}
+
+.metric-title {
+  font-style: italic;
+}
 
 /* HEADER & BODY COLOR */
 
@@ -580,7 +589,7 @@ header h1 {
   border: 1px solid green;
 }
 
-.ui-page section {
+section {
   background: white;
 }
 

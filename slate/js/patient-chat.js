@@ -4,7 +4,7 @@ $( document ).ready(function() {
   var myDataRef = new Firebase('https://burning-inferno-7459.firebaseio.com');
   $('#messageInput').keypress(function (e) {
     if (e.keyCode == 13) {
-      var name = 'Mom';
+      var name = 'John';
       var text = $('#messageInput').val();
       myDataRef.push({name: name, text: text});
       $('#messageInput').val('');
@@ -44,7 +44,7 @@ $( document ).ready(function() {
 
   $('#messagesDiv').on('click', function(e){
       var message = e.target
-      
+
       $('.fade_bookmark_message').append(message)
       $('')
       $('.fade_bookmark').show()
