@@ -99,3 +99,31 @@ ul {
 .alert{
   color: red
 }
+
+/*HEADER */
+
+.header {
+  display: inline-block;
+  background: white;
+  color: green;
+}
+
+.header > a {
+  background: white;
+  color: green;
+  border: none;
+}
+
+.header > .circular {
+  border: 1px solid green;
+}
+
+.ui-page section {
+  background: white;
+}
+
+.footer .navbar {
+  display: inline-block;
+  background: white;
+  color: green;
+}

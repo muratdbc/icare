@@ -153,3 +153,15 @@ hidden modal for bookmarking*/
     }
 
 
+/* FOOTER */
+
+.footer {
+  display: inline-block;
+  background: white;
+}
+
+#line {
+  height: 1px;
+  border: 1px solid green;
+  margin: 10px;
+}

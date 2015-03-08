@@ -56,3 +56,15 @@ h4, h2 {
 .footer * {
 	cursor: pointer;
 }
+
+
+.footer {
+  display: inline-block;
+  background: white;
+}
+
+#line {
+  height: 1px;
+  border: 1px solid green;
+  margin: 10px;
+}
