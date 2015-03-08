@@ -26,7 +26,7 @@ httputil.getObservation = function( code) {
   $.ajax({
         url: BASE_URL_OBSERVATION + '?subject:_id=' + patient_id + '&name=' + code + '&_sort:asc=date&_count=50', //+ '&date=>' + startDate,
         method: "GET",
-        headers: {'Authorization':'Bearer woHg3Qu5vjXQdOxd28KGVJQhInr2','Accept':'application/json'},
+        headers: {'Authorization':'Bearer TIrzato74pACyPcnzEIcefKhbLMR','Accept':'application/json'},
         success: function (data, status, headers, config) {
           console.log(data);
         }
@@ -38,7 +38,7 @@ httputil.getPatientData = function() {
   $.ajax({
     url: BASE_URL_PATIENT + patient_id,
     method: "GET",
-    headers: {'Authorization':'Bearer woHg3Qu5vjXQdOxd28KGVJQhInr2','Accept':'application/json'},
+    headers: {'Authorization':'Bearer TIrzato74pACyPcnzEIcefKhbLMR','Accept':'application/json'},
     success: function (data, status, headers, config) {
           console.log(data);
           $("#name").html(data.name[0].text + ", 69" )
