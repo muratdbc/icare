@@ -129,3 +129,7 @@ hidden modal for bookmarking*/
   text-align: center;
   width: 300px;
 }
+
+.fade_bookmark button{
+    cursor: pointer;
+}
