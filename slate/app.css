@@ -88,3 +88,14 @@ ul {
   font-size: large;
 
 }
+.smaller{
+  margin-left: 80px;
+  padding: 0px
+}
+.smaller img{
+  margin-left: 10px;
+    width:20px;
+}
+.alert{
+  color: red
+}
