@@ -45,7 +45,8 @@ $( document ).ready(function() {
   $('#messagesDiv').on('click', function(e){
       var message = e.target
       
-      $('.fade_bookmark_message').append(message).css
+      $('.fade_bookmark_message').append(message)
+      $('')
       $('.fade_bookmark').show()
     // $('#myModal').modal('show');
   });
