@@ -133,3 +133,23 @@ hidden modal for bookmarking*/
 .fade_bookmark button{
     cursor: pointer;
 }
+
+    .bookmark_button {
+      width: 50%;
+      margin: 15px 0 15px 0;
+      background-color: #F04D31;
+    }
+
+    /*.notify_doctor_button {
+      width: 50%;
+      margin: 15px 0 15px 0;
+      background-color: #F04D31;
+    }*/
+
+    .cancel_bookmark_button {
+      width: 50%;
+      margin: 15px 0 15px 0;
+      background-color: #404040;
+    }
+
+
