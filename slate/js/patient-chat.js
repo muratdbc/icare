@@ -42,9 +42,11 @@ $( document ).ready(function() {
 // ------------ BUBBLE BOOKMARK / DOCTOR EVENT ------------
 
   $('#messagesDiv').on('click', function(e){
-
+      debugger
     $('#myModal').modal('show');
   });
+
+
 
 
   //
