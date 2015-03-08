@@ -20,6 +20,11 @@ FULL COPY FROM LOGAN's Patient-home.css
   padding: 2%;
 }
 
+#line {
+  height: 1px;
+  border: 1px solid green;
+}
+
 /* --------------------------------
 
 Primary style
@@ -28,6 +33,10 @@ Primary style
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: "Droid Serif", serif;
 }
 
 *, *:after, *:before {
@@ -76,12 +85,28 @@ Modules - reusable parts of our design
   clear: both;
 }
 
+header {
+  height: 5%;
+  line-height: 400%;
+  text-align: center;
+  background: white;
+}
+
+.header {
+  display: inline-block;
+}
+.header#left {
+  float: left;
+}
+.header#right {
+  float: right;
+}
 /* --------------------------------
 
 Main components
 
 -------------------------------- */
-header {
+/*header {
   height: 200px;
   line-height: 200px;
   text-align: center;
@@ -101,7 +126,7 @@ header h1 {
     font-size: 24px;
     font-size: 1.5rem;
   }
-}
+}*/
 
 #cd-timeline {
   position: relative;
@@ -177,15 +202,50 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
+.cd-picture {
   background: #75ce66;
 }
-.cd-timeline-img.cd-movie {
+.cd-alert {
+  background: #FF0000;
+}
+.cd-movie {
   background: #c03b44;
 }
-.cd-timeline-img.cd-location {
+.cd-note {
+  background: #00CED1;
+}
+.cd-note img {
+    border: 2px solid white;
+    border-radius: 25%;
+    padding: 3px;
+  }
+.cd-location {
   background: #f0ca45;
 }
+
+.cd-timeline-content {
+  .cd-picture {
+  background: #75ce66;
+  }
+  .cd-movie {
+    background: #c03b44;
+  }
+  .cd-note {
+    background: #00CED1;
+  }
+  .cd-note img {
+      border: 2px solid white;
+      border-radius: 25%;
+      padding: 3px;
+    }
+  .cd-location {
+    background: #f0ca45;
+  }
+  .cd-alert {
+  background: #FF0000;
+  }
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 60px;
@@ -278,6 +338,7 @@ header h1 {
   clear: both;
 }
 .cd-timeline-content h2 {
+  padding: 2% 4% 4% 4%;
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -330,6 +391,9 @@ header h1 {
     font-size: 0.875rem;
   }
 }
+
+
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
@@ -353,6 +417,7 @@ header h1 {
     font-size: 16px;
     font-size: 1rem;
   }
+
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
   }
